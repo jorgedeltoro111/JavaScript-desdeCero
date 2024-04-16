@@ -10,3 +10,13 @@ console.log(!!number);
 const value = 0;
 const explicitValue = Boolean(value);
 console.log(explicitValue);
+//valores unicos
+const uniqueId = Symbol('id');
+const symbol1 = Symbol(1);
+const symbol2 = Symbol(1);
+console.log(symbol1 === symbol2); // false
+
+const ID = Symbol('id');
+let user = {};
+user[ID] = '12345';
+console.log(user); // { [Symbol(id)]: '12345' }
